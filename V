@@ -1,0 +1,31 @@
+ int x=100;
+ 
+  void setup(){
+  pinMode(1,OUTPUT);
+  pinMode (2,OUTPUT);
+  pinMode (3,OUTPUT);
+  pinMode (4,OUTPUT);
+  pinMode (5,OUTPUT);
+  }
+  
+  
+  void loop(){
+  for(int i=1;i<6;i++){
+  
+   digitalWrite(i,HIGH);
+    delay(x);
+  digitalWrite(i-2,LOW);
+  delay(x);
+  }
+
+ for(int i=5;i>1;i--){
+     digitalWrite(i,HIGH);
+    delay(x);
+  digitalWrite(i+1,LOW);
+  delay(x);
+ }
+
+} 
+
+
+    
